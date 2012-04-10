@@ -7,3 +7,11 @@ make
 cd ../tests/panda_texture
 export VERSIONER_PYTHON_PREFER_32_BIT=yes
 /usr/bin/python panda_texture.py
+
+--
+
+C code is in /src/*
+
+Python code is in /lib/pyar/*
+
+Panda3d demo code is in /tests/panda_texture/panda_texture.py
