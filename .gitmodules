@@ -1,6 +1,0 @@
-[submodule "tests/lib/nark"]
-	path = lib/nark
-	url = doug@shadowmint.xen.prgmr.com:repo/nark.git
-[submodule "deps/libn"]
-	path = deps/libn
-	url = doug@shadowmint.xen.prgmr.com:repo/libn.git
