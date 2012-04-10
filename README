@@ -1,0 +1,9 @@
+Build instructions
+
+mkdir build
+cd build
+cmake ..
+make
+cd ../tests/panda_texture
+export VERSIONER_PYTHON_PREFER_32_BIT=yes
+/usr/bin/python panda_texture.py
