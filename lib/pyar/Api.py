@@ -7,7 +7,7 @@ class Api(object):
   def __init__(self):
     libar = CDLL(lib())
 
-    # int8_t *ar_get_rgb()
+    # unsigned char *ar_get_rgb(void)
     libar.ar_get_rgb.restype = POINTER(c_char)
 
     self.libar = libar
