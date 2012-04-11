@@ -42,13 +42,14 @@ class VisionTexture(Texture):
     expectedSize = self.getExpectedRamImageSize()
     print("Expected length: " + str(expectedSize))
     rgb = self.__vision.next()
+    rgb = rgb[:expectedSize]
     p = PTAUchar.emptyArray(expectedSize)
 
     # This actually works
     # for i in range(0, self.__vision.width * self.__vision.height * 3):
     #   p.setElement(i, ord(rgb[i]))
 
-    p.setSubdata(0, expectedSize, rgb)
+    p.setData(rgb)
     print("PTAU length: " + str(p.size()))
 
     self.setRamImage(CPTAUchar(p))

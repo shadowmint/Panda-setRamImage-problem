@@ -1,2 +1,2 @@
 def lib():
-  return "/Users/doug/projects/panda_example/build/libar.dylib"
+  return "/Users/douglasl/projects/dummy/Panda-setRamImage-problem/build/libar.dylib"
